@@ -1,0 +1,15 @@
+C:\Users\Moi\source\repos\FlowerShopIT\bin\Debug\FlowerShopIT.exe.config
+C:\Users\Moi\source\repos\FlowerShopIT\bin\Debug\FlowerShopIT.exe
+C:\Users\Moi\source\repos\FlowerShopIT\bin\Debug\FlowerShopIT.pdb
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT.csprojAssemblyReference.cache
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\MainWindow.g.cs
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\App.g.cs
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT_MarkupCompile.cache
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT_MarkupCompile.lref
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\MainWindow.baml
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT.g.resources
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT.Properties.Resources.resources
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT.csproj.GenerateResource.cache
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT.csproj.CoreCompileInputs.cache
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT.exe
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\FlowerShopIT.pdb

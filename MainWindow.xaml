@@ -1,0 +1,40 @@
+﻿<Window x:Class="FlowerShopIT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowerShopIT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000">
+    <DockPanel>
+        <Label x:Name="flowershoplabel" Content="Welcome LemonTree Flower Shop&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="200" Height="27" Background="#FFF38080" Foreground="#FFF5F4F4" FontWeight="Bold"/>
+        <Menu DockPanel.Dock="Left" Margin="-200,40,592,532">
+            <MenuItem Header="_Menu Flower Shop">
+                <MenuItem Header="_Create Flower Shop" />
+                <MenuItem Header="_Select Flower Shop" />
+                <MenuItem Header="_Add new product" >
+                    <MenuItem x:Name="Flowers" Header="Flowers">
+
+                    </MenuItem>
+                    <MenuItem x:Name="Tree" Header="Trees">
+
+                    </MenuItem>
+                    <MenuItem x:Name="Decoration" Header="Decoration">
+                        <MenuItem x:Name="Plastic" Header="Plastic">
+
+                        </MenuItem>
+                        <MenuItem x:Name="Wood" Header="Wood">
+
+                        </MenuItem>
+
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Show current Stock" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+        </Menu>
+        <TextBox AcceptsReturn="True" />
+
+    </DockPanel>
+</Window>
