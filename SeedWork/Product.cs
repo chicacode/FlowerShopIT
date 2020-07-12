@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FlowerShopIT.Models
+{
+    class Product
+    {
+        // TODO
+        // Clase madre del cual heredan los productos que se venden en floristeria
+        // 1 Floristeria, 2 ARBOL, 3 FLORES, 4 Decoración que consta de Materiales de madera o de plastico. 
+        // propiedad general. Todos los productos tienen un precio
+        // crear menu donde el user esoga si desea crear floristeria, añadir productos o ver el stock. 
+    }
+}
