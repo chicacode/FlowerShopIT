@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FlowerShopIT.Models
 {
-    class Plastic
+    class Plastic : Material
     {
+        public Plastic ( )
+        {
+            
+        }
     }
 }

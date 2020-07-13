@@ -6,33 +6,40 @@ using System.Threading.Tasks;
 
 namespace FlowerShopIT.Models
 {
-         // TODO
-        // Clase madre del cual heredan los productos que se venden en floristeria
-        // 1 Floristeria, 2 ARBOL, 3 FLORES, 4 Decoración que consta de Materiales de madera o de plastico. 
-        // propiedad general. Todos los productos tienen un precio
-        // crear menu donde el user esoga si desea crear floristeria, añadir productos o ver el stock. 
-        // crear un diagrama de flujo de gen my model
-        // crear carpeta controllar que se encargara de metodos de añadir elementos a listas
+    // TODO
+    // Clase madre del cual heredan los productos que se venden en floristeria
+    // 1 Floristeria, 2 ARBOL, 3 FLORES, 4 Decoración que consta de Materiales de madera o de plastico. 
+    // propiedad general. Todos los productos tienen un precio
+    // crear menu donde el user esoga si desea crear floristeria, añadir productos o ver el stock. 
+    // crear un diagrama de flujo de gen my model
+    // crear carpeta controllar que se encargara de metodos de añadir elementos a listas
 
-    class Product
+        // ALT+F8  para indentar 
+        // CTR+k, CTR+C para comentar
+    public class Product
     {
         // attributes
         private double price;
 
-        public Product( double price ){
+        public Product ( ) { }
+        // Constructor
+        public Product ( double price )
+        {
 
             this.price = price;
         }
 
-        public double PRICE { 
+        public double PRICE
+        {
 
-            get { return this.price; }
-            set { this.price = setPrice(value); }
+            get { return price; }
+            set { price = setPrice(value); }
         }
 
-        private double setPrice(double _price ){
+        private double setPrice ( double _price )
+        {
 
-            return this.price = _price; 
+            return price = _price;
         }
     }
 }

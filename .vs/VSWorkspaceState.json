@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Models",
+    "\\SeedWork"
   ],
-  "SelectedNode": "\\FlowerShopIT.sln",
+  "SelectedNode": "\\SeedWork\\Product.cs",
   "PreviewInSolutionExplorer": false
 }
