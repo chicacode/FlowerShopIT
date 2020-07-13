@@ -11,7 +11,7 @@
         <Menu DockPanel.Dock="Left" Margin="-200,40,592,532">
             <MenuItem Header="_Menu Flower Shop">
                 <MenuItem Header="_Create Flower Shop" />
-                <MenuItem Header="_Select Flower Shop" />
+            
                 <MenuItem Header="_Add new product" >
                     <MenuItem x:Name="Flowers" Header="Flowers">
 
