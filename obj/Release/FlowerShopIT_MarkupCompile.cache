@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Release\
 FlowerShopIT
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Moi\source\repos\FlowerShopIT\App.xaml
 11151548125
 
@@ -16,5 +16,5 @@ C:\Users\Moi\source\repos\FlowerShopIT\App.xaml
 13-1505183044
 MainWindow.xaml;
 
-False
+True
 

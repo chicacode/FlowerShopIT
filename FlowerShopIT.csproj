@@ -69,6 +69,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Decoration.cs" />
+    <Compile Include="Models\Flower.cs" />
+    <Compile Include="Models\FlowerShop.cs" />
+    <Compile Include="SeedWork\Material.cs" />
+    <Compile Include="Models\Plastic.cs" />
+    <Compile Include="SeedWork\Product.cs" />
+    <Compile Include="Models\Tree.cs" />
+    <Compile Include="Models\Wood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,5 +102,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
