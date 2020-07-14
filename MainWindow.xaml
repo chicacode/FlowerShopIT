@@ -5,36 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlowerShopIT"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="1000">
-    <DockPanel>
-        <Label x:Name="flowershoplabel" Content="Welcome LemonTree Flower Shop&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="200" Height="27" Background="#FFF38080" Foreground="#FFF5F4F4" FontWeight="Bold"/>
-        <Menu DockPanel.Dock="Left" Margin="-200,40,592,532">
-            <MenuItem Header="_Menu Flower Shop" Click="MenuItem_Click">
-                <MenuItem Header="_Create Flower Shop" />
-            
-                <MenuItem Header="_Add new product" >
-                    <MenuItem x:Name="Flowers" Header="Flowers">
+        Title="FlowerShop" Height="650" Width="1000">
+    <Grid>
 
-                    </MenuItem>
-                    <MenuItem x:Name="Tree" Header="Trees">
+        <Label x:Name="labelName" Grid.Row="0" Grid.Column="1" Background="#FFFB2020" Cursor="Arrow" Focusable="True" FontSize="20" FontStyle="Oblique" FontWeight="Bold" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,3,10,10" Width="311" Content="     Flower Shop Lemon Tree" />
 
-                    </MenuItem>
-                    <MenuItem x:Name="Decoration" Header="Decoration">
-                        <MenuItem x:Name="Plastic" Header="Plastic">
+        <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="20" Margin="30">Add Tree</Button>
+        <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="20"  Margin="30">Add Flower</Button>
+        <Button  Grid.Column="0" Grid.Row="3" x:Name="buttonDeco" FontSize="20"  Margin="30">Add Decoration</Button>
+        <Button  Grid.Column="1" Grid.RowSpan="4" FontSize="20" Content="View Stock"  Background="#FF918282"  x:Name="buttonStock" BorderBrush="#FF918282" BorderThickness="0" Margin="0,50,0,0"/>
+        <Button Grid.Column="2" Grid.RowSpan="4" Background="#FFF" x:Name="buttonShop" BorderThickness="0"  Margin="0,50,0,0">Image FlowerShop</Button>
 
-                        </MenuItem>
-                        <MenuItem x:Name="Wood" Header="Wood">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-                        </MenuItem>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="Row1" Height="50"></RowDefinition>
+            <RowDefinition x:Name="Row2" Height="*"></RowDefinition>
+            <RowDefinition x:Name="Row3" Height="*" ></RowDefinition>
+            <RowDefinition x:Name="Row4" Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
 
-                    </MenuItem>
-                </MenuItem>
-                <MenuItem Header="_Show current Stock" />
-                <Separator />
-                <MenuItem Header="_Exit" />
-            </MenuItem>
-        </Menu>
-        <TextBox AcceptsReturn="True" />
-
-    </DockPanel>
+    </Grid>
 </Window>
