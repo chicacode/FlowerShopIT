@@ -9,7 +9,7 @@ namespace FlowerShopIT.Models
     class Decoration : Product
     {
         // USer attribute Material type
-        Material material;
+        private Material material;
 
         // Constructor
         public Decoration ( double _price, Material _material )
@@ -23,5 +23,35 @@ namespace FlowerShopIT.Models
             return this.material;
         }
 
+        public void setMaterial ( Material _material )
+        {
+            this.material = _material;
+        }
+
+        //public override string ToString ( )
+        //{
+        //    string materialFound;
+        //    if(material.Equals ( "PLASTIC" ))
+        //    {
+        //        materialFound = "PLASTIC";
+        //    }
+        //    else
+        //    {
+        //        materialFound = "WOOD";
+        //    }
+        //    return materialFound;
+        //}
+
+        public Material materialPlastic ( )
+        {
+            Material plastic = Material.PLASTIC;
+            return plastic;
+        }
+
+        public Material materialWood ( )
+        {
+            Material wood = Material.WOOD;
+            return wood;
+        }
     }
 }

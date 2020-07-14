@@ -9,7 +9,7 @@
     <DockPanel>
         <Label x:Name="flowershoplabel" Content="Welcome LemonTree Flower Shop&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="200" Height="27" Background="#FFF38080" Foreground="#FFF5F4F4" FontWeight="Bold"/>
         <Menu DockPanel.Dock="Left" Margin="-200,40,592,532">
-            <MenuItem Header="_Menu Flower Shop">
+            <MenuItem Header="_Menu Flower Shop" Click="MenuItem_Click">
                 <MenuItem Header="_Create Flower Shop" />
             
                 <MenuItem Header="_Add new product" >

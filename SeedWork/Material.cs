@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace FlowerShopIT.Models
 {
-    public class Material
+    public enum Material
     {
-        // Constructor
-        public Material ( )
-        {
-          
-        }
-
+        PLASTIC, // 0
+        WOOD // 1
     }
 }

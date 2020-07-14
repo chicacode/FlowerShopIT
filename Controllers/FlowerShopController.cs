@@ -32,5 +32,31 @@ namespace FlowerShopIT.Controllers
             Decoration decoration = new Decoration ( price, type );
             flowershop.addProduct ( decoration );
         }
+
+        public void getTypeMaterial ( Decoration decoration )
+        {
+            int getMatType;
+            Console.WriteLine ("Escoge opción 1 Plástico || Opción 2 Madera");
+
+            try
+            {
+                getMatType = int.Parse ( Console.ReadLine () );
+            }catch(FormatException ex)
+            {
+                Console.WriteLine ("No has introducido Numero valido", ex);
+                getMatType = 0;
+            }
+
+            if(getMatType == 1)
+            {
+                decoration.materialPlastic ();
+            }
+            else
+            {
+                decoration.materialWood ();
+            }
+        }
+
+
     }
 }
