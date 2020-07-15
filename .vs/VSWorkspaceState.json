@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Models",
-    "\\SeedWork"
+    ""
   ],
-  "SelectedNode": "\\SeedWork\\Product.cs",
+  "SelectedNode": "\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
