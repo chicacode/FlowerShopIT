@@ -16,7 +16,7 @@
         <Button  Grid.Column="1" Grid.RowSpan="4" FontSize="20" Content="View Stock"  Background="Orange"  x:Name="image1"  BorderBrush="Beige" BorderThickness="0" Margin="0,80,0,30"/>
         <Button Grid.Column="2" Grid.RowSpan="4" Background="Fuchsia" x:Name="buttonShop" BorderThickness="0"  Margin="0,80,0,30" Padding="20px">
             <StackPanel Orientation="Vertical">
-                <Image x:Name="image" Source="C:\Users\Moi\source\repos\FlowerShopIT\Resources/image1.jpg" IsEnabled="False"></Image>
+                <Image x:Name="image" Source="Resources/image1.jpg" IsEnabled="False"></Image>
             </StackPanel>
         </Button>
 
