@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlowerShopIT.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,9 @@ namespace FlowerShopIT
 
         private void ButtonTree_Click ( object sender, RoutedEventArgs e )
         {
+            // show texbox and retrieve data
            
+               
         }
 
         private void ButtonFlower_Click ( object sender, RoutedEventArgs e )

@@ -10,9 +10,14 @@
 
         <Label x:Name="labelName" Grid.Row="0" Grid.Column="1" Background="LightCoral" Cursor="Arrow" Focusable="True" FontSize="20" FontStyle="Oblique" FontWeight="Normal" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,3,10,10" Width="311" Content="     Flower Shop Lemon Tree" />
         <!--controllers buttons -->
-        <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="20" Margin="30" Background="GreenYellow" BorderBrush="Beige" Click="ButtonTree_Click">Add Tree</Button>
-        <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="20"  Margin="30" Background="Pink" BorderBrush="Beige" Click="ButtonFlower_Click">Add Flower</Button>
-        <Button  Grid.Column="0" Grid.Row="3" x:Name="buttonDeco" FontSize="20"  Margin="30" Background="Teal"  BorderBrush="Beige" Click="ButtonDeco_Click">Add Decoration</Button>
+
+        <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="20" Margin="30" Background="GreenYellow" BorderBrush="Beige" Click="ButtonTree_Click">Add Tree
+        </Button>
+        
+        <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="20"  Margin="30" Background="Pink" BorderBrush="Beige" Click="ButtonFlower_Click">Add Flower
+        </Button>
+        <Button  Grid.Column="0" Grid.Row="3" x:Name="buttonDeco" FontSize="20"  Margin="30" Background="Teal"  BorderBrush="Beige" Click="ButtonDeco_Click">Add Decoration
+        </Button>
         <Button  Grid.Column="1" Grid.RowSpan="4" FontSize="20" Content="View Stock"  Background="Orange"  x:Name="image1"  BorderBrush="Beige" BorderThickness="0" Margin="0,80,0,30" Click="ViewStock_Click"/>
         <!--Image -->
         <Button Grid.Column="2" Grid.RowSpan="4" Background="Fuchsia" x:Name="buttonShop" BorderThickness="0"  Margin="0,80,0,30" Padding="20px">
