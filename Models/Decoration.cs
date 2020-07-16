@@ -28,20 +28,6 @@ namespace FlowerShopIT.Models
             this.material = _material;
         }
 
-        //public override string ToString ( )
-        //{
-        //    string materialFound;
-        //    if(material.Equals ( "PLASTIC" ))
-        //    {
-        //        materialFound = "PLASTIC";
-        //    }
-        //    else
-        //    {
-        //        materialFound = "WOOD";
-        //    }
-        //    return materialFound;
-        //}
-
         public Material materialPlastic ( )
         {
             Material plastic = Material.PLASTIC;
