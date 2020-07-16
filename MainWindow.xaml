@@ -10,34 +10,86 @@
 
         <Label x:Name="labelName" Grid.Row="0" Grid.Column="1" Background="LightCoral" Cursor="Arrow" Focusable="True" FontSize="20" FontStyle="Oblique" FontWeight="Normal" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,3,10,10" Width="311" Content="     Flower Shop Lemon Tree" />
         <!--controllers buttons -->
+        <StackPanel Orientation="Horizontal" x:Name="stack1" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Grid>
+                <TextBox  Grid.Row="0" x:Name="dataTreeSize" Background="Orange" Width="150px">Tamaño en Numero</TextBox>
+                <TextBox  Grid.Row="1" x:Name="dataTreePrice" Background="Orange" Width="150px">Precio</TextBox>
+                <Button   Grid.Row="2" x:Name="AddTree" Click="AddTree_Click" Background="Beige" Width="150px">Añade Arbol</Button>
 
-        <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="20" Margin="30" Background="GreenYellow" BorderBrush="Beige" Click="ButtonTree_Click">Add Tree
-        </Button>
-        
-        <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="20"  Margin="30" Background="Pink" BorderBrush="Beige" Click="ButtonFlower_Click">Add Flower
-        </Button>
-        <Button  Grid.Column="0" Grid.Row="3" x:Name="buttonDeco" FontSize="20"  Margin="30" Background="Teal"  BorderBrush="Beige" Click="ButtonDeco_Click">Add Decoration
-        </Button>
-        <Button  Grid.Column="1" Grid.RowSpan="4" FontSize="20" Content="View Stock"  Background="Orange"  x:Name="image1"  BorderBrush="Beige" BorderThickness="0" Margin="0,80,0,30" Click="ViewStock_Click"/>
-        <!--Image -->
-        <Button Grid.Column="2" Grid.RowSpan="4" Background="Fuchsia" x:Name="buttonShop" BorderThickness="0"  Margin="0,80,0,30" Padding="20px">
-            <StackPanel Orientation="Vertical">
-                <Image x:Name="image" Source="Resources/image1.jpg" IsEnabled="False"></Image>
-            </StackPanel>
-        </Button>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="ow1" Height="*"></RowDefinition>
+                    <RowDefinition x:Name="ow2" Height="*"></RowDefinition>
+                    <RowDefinition x:Name="ow3" Height="*" ></RowDefinition>
+                </Grid.RowDefinitions>
+            </Grid>
+        </StackPanel>
 
-        <Grid.RowDefinitions>
-            <RowDefinition x:Name="Row1" Height="50"></RowDefinition>
-            <RowDefinition x:Name="Row2" Height="*"></RowDefinition>
-            <RowDefinition x:Name="Row3" Height="*" ></RowDefinition>
-            <RowDefinition x:Name="Row4" Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
+        <StackPanel  Orientation="Vertical" x:Name="stack2" Visibility="Hidden" >
+            <Grid>
+                <TextBox Grid.Row="0" x:Name="dataFlowerColor" Background="SpringGreen" Width="150px">Color Flor</TextBox>
+                <TextBox Grid.Row="1" x:Name="dataFlowerPrice" Background="SpringGreen" Width="150px">Precio Flor</TextBox>
+                <Button Grid.Row="2" x:Name="AddFlower" Click="AddFlower_Click" Background="Orange" Width="150px">Añade Flor</Button>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-    </Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="owa1" Height="*"></RowDefinition>
+                    <RowDefinition x:Name="owa2" Height="*"></RowDefinition>
+                    <RowDefinition x:Name="owa3" Height="*" ></RowDefinition>
+                </Grid.RowDefinitions>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel  Orientation="Horizontal" x:Name="stack3" Visibility="Hidden"  HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Grid>
+                <TextBox Grid.Row="0" x:Name="dataDecoration" Background="GreenYellow" Width="150px">Tipo decorción</TextBox>
+                <TextBox Grid.Row="1" x:Name="datadecorationPrice"  Background="GreenYellow" Width="150px">Precio Decoración</TextBox>
+                <Button Grid.Row="2" x:Name="AddDeco" Click="AddDeco_Click"  Background="SeaGreen" Width="150px">Añade Decoración</Button>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="sowa1" Height="*"></RowDefinition>
+                    <RowDefinition x:Name="sowa2" Height="*"></RowDefinition>
+                    <RowDefinition x:Name="sowa3" Height="*" ></RowDefinition>
+                </Grid.RowDefinitions>
+            </Grid>
+        </StackPanel>
+
+
+                    <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="20" Margin="30" Background="GreenYellow" BorderBrush="Beige" Click="ButtonTree_Click">Add Tree
+                    </Button>
+
+                    <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="20"  Margin="30" Background="Pink" BorderBrush="Beige" Click="ButtonFlower_Click">Add Flower
+                    </Button>
+                    <Button  Grid.Column="0" Grid.Row="3" x:Name="buttonDeco" FontSize="20"  Margin="30" Background="Teal"  BorderBrush="Beige" Click="ButtonDeco_Click">Add Decoration
+                    </Button>
+                    <Button  Grid.Column="1" Grid.RowSpan="4" FontSize="20" Content="View Stock"  Background="Orange"  x:Name="image1"  BorderBrush="Beige" BorderThickness="0" Margin="0,80,0,30" Click="ViewStock_Click"/>
+                    <!--Image -->
+                    <Button Grid.Column="2" Grid.RowSpan="4" Background="Fuchsia" x:Name="buttonShop" BorderThickness="0"  Margin="0,80,0,30" Padding="20px">
+                        <StackPanel Orientation="Vertical">
+                            <Image x:Name="image" Source="Resources/image1.jpg" IsEnabled="False"></Image>
+                        </StackPanel>
+                    </Button>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Row1" Height="50"></RowDefinition>
+                        <RowDefinition x:Name="Row2" Height="*"></RowDefinition>
+                        <RowDefinition x:Name="Row3" Height="*" ></RowDefinition>
+                        <RowDefinition x:Name="Row4" Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+            </Grid>
 </Window>
