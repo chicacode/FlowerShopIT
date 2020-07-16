@@ -8,7 +8,7 @@
         Title="FlowerShop" Height="650" Width="1000">
     <Grid>
 
-        <Label x:Name="labelName" Grid.Row="0" Grid.Column="1" Background="LightCoral" Cursor="Arrow" Focusable="True" FontSize="20" FontStyle="Oblique" FontWeight="Normal" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,3,10,10" Width="311" Content="     Flower Shop Lemon Tree" />
+        <Label x:Name="labelName" Grid.Row="0" Grid.Column="1" Background="LightCoral" Cursor="Arrow" Focusable="True" FontSize="20" FontStyle="Oblique" FontWeight="Normal" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,3,10,10" Width="311" Content="Flower Shop Lemon Tree" />
         <!--controllers buttons -->
 
         <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="20" Margin="30" Background="GreenYellow" BorderBrush="Beige" Click="ButtonTree_Click">Add Tree
