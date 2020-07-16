@@ -7,18 +7,13 @@
         mc:Ignorable="d"
         Title="FlowerShop" Height="650" Width="1000">
     <Grid>
+        <TextBlock Name="FlowerShopName" Grid.Row="0" Grid.ColumnSpan="3" Background="Gray" FontSize="34" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,25,0" Text="Flower Shop Lemon Tree"/>
 
-        <Label x:Name="labelName" Grid.Row="0" Grid.Column="1" Background="Gray" Cursor="Arrow" Focusable="True" FontSize="20" FontStyle="Oblique" FontWeight="Normal" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,3,10,10" Width="311" Content="     Flower Shop Lemon Tree" />
-
-        <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="20" Margin="30" Background="GreenYellow" BorderBrush="Beige">Add Tree</Button>
-        <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="20"  Margin="30" Background="Pink" BorderBrush="Beige">Add Flower</Button>
-        <Button  Grid.Column="0" Grid.Row="3" x:Name="buttonDeco" FontSize="20"  Margin="30" Background="Teal"  BorderBrush="Beige">Add Decoration</Button>
-        <Button  Grid.Column="1" Grid.RowSpan="4" FontSize="20" Content="View Stock"  Background="Orange"  x:Name="image1"  BorderBrush="Beige" BorderThickness="0" Margin="0,80,0,30"/>
-        <Button Grid.Column="2" Grid.RowSpan="4" Background="Fuchsia" x:Name="buttonShop" BorderThickness="0"  Margin="0,80,0,30" Padding="20px">
-            <StackPanel Orientation="Vertical">
-                <Image x:Name="image" Source="Resources/image1.jpg" IsEnabled="False"></Image>
-            </StackPanel>
-        </Button>
+        <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="28" Margin="30" Background="GreenYellow" BorderBrush="Beige">Add Tree</Button>
+        <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="28"  Margin="30" Background="Pink" BorderBrush="Beige">Add Flower</Button>
+        <Button Grid.Column="0" Grid.Row="3" x:Name="buttonDeco" FontSize="28"  Margin="30" Background="Cyan"  BorderBrush="Beige">Add Decoration</Button>
+        <Button Grid.Column="1" Grid.RowSpan="4" FontSize="34" Content="Stock"  Background="Orange"  x:Name="image1"  BorderBrush="Beige" BorderThickness="0" Margin="0,107,30,30"/>
+        <Image Grid.Column="2" Grid.RowSpan="4" Name="image" Source="Resources/image1.jpg" IsEnabled="False" Margin="0,80,25,30"></Image>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -27,7 +22,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition x:Name="Row1" Height="50"></RowDefinition>
+            <RowDefinition x:Name="Row1" Height="75"></RowDefinition>
             <RowDefinition x:Name="Row2" Height="*"></RowDefinition>
             <RowDefinition x:Name="Row3" Height="*" ></RowDefinition>
             <RowDefinition x:Name="Row4" Height="*"></RowDefinition>

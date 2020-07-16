@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\
+C:\Users\oriol_000\Documents\IT_Academy\FlowerShopIT\FlowerShopIT\obj\Debug\
 FlowerShopIT
 none
 false
 DEBUG;TRACE
-C:\Users\Moi\source\repos\FlowerShopIT\App.xaml
-11151548125
+C:\Users\oriol_000\Documents\IT_Academy\FlowerShopIT\FlowerShopIT\App.xaml
+6-118173386
 
-131539320944
+18-1918116831
 13-1505183044
-MainWindow.xaml;
+AddDecorationWindow.xaml;AddFlowerWindow.xaml;AddTreeWindow.xaml;FlowerShopName.xaml;MainWindow.xaml;StockWindow.xaml;
 
 True
 
