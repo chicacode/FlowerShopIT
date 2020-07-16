@@ -28,23 +28,28 @@ namespace FlowerShopIT
 
         private void ButtonTree_Click ( object sender, RoutedEventArgs e )
         {
-            // show texbox and retrieve data
+            // show new windows and save data
+            AddTreeWindow addTree = new AddTreeWindow ();
+            addTree.Show ();
                      
         }
 
         private void ButtonFlower_Click ( object sender, RoutedEventArgs e )
         {
-           
+            AddFlowerWindow addFlower = new AddFlowerWindow ();
+            addFlower.Show ();
         }
 
         private void ButtonDeco_Click ( object sender, RoutedEventArgs e )
         {
-          
+            AddDecorationWindow addDeco = new AddDecorationWindow ();
+            addDeco.Show ();
         }
 
         private void ViewStock_Click ( object sender, RoutedEventArgs e )
         {
-
+            StockWindow viewStock = new StockWindow ();
+            viewStock.Show ();
         }
 
 
