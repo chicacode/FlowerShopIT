@@ -25,5 +25,24 @@ namespace FlowerShopIT
             InitializeComponent();
         }
 
+        private void ButtonTree_Click ( object sender, RoutedEventArgs e )
+        {
+           
+        }
+
+        private void ButtonFlower_Click ( object sender, RoutedEventArgs e )
+        {
+
+        }
+
+        private void ButtonDeco_Click ( object sender, RoutedEventArgs e )
+        {
+
+        }
+
+        private void ViewStock_Click ( object sender, RoutedEventArgs e )
+        {
+
+        }
     }
 }
