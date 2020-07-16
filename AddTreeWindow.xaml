@@ -1,0 +1,17 @@
+﻿<Window x:Class="FlowerShopIT.AddTreeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowerShopIT"
+        mc:Ignorable="d"
+        Title="AddTreeWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="401" Margin="10,10,0,0" VerticalAlignment="Top" Width="773" Background="GreenYellow">
+            <TextBlock Name="AddTree" FontSize="28" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,10,10,10" Text="Add a new tree product"/>
+            <TextBox Height="40" TextWrapping="Wrap" Text="Height" Margin="200,40,200,40" FontSize="20" VerticalContentAlignment="Center"/>
+            <TextBox Height="40" TextWrapping="Wrap" Text="Price" Margin="200,40,200,40" FontSize="20" VerticalContentAlignment="Center"/>
+            <Button Margin="300,30,300,0" Height="40" FontSize="24">Add</Button>
+        </StackPanel>
+    </Grid>
+</Window>

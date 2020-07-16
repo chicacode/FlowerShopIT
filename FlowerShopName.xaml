@@ -1,0 +1,16 @@
+﻿<Window x:Class="FlowerShopIT.FlowerShopName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowerShopIT"
+        mc:Ignorable="d"
+        Title="FlowerShopName" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="401" Margin="10,10,0,0" VerticalAlignment="Top" Width="773" Background="LightGray">
+            <TextBlock Text="What is the name of your flower shop?" FontSize="24" FontFamily="Segoe UI Black" Margin="170,100,0,20"/>
+            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center"/>
+            <Button Margin="300,30,300,0" Height="40" FontSize="24">OK</Button>
+        </StackPanel>
+    </Grid>
+</Window>
