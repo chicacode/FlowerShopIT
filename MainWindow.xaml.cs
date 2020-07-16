@@ -23,7 +23,19 @@ namespace FlowerShopIT
     {
         public MainWindow()
         {
-            InitializeComponent();
+           
+            FlowerShop flowerShop1 = new FlowerShop ();
+            if(flowerShop1.NAME == null)
+            {
+                FlowerShopName newFlowerShopName = new FlowerShopName ();
+                
+                newFlowerShopName.Show ();
+            // Cuando haga click en el botón de la ventana principal que aparezca la floristeria con las opciones
+                this.DataContext = newFlowerShopName.LabelName;
+                
+            }
+            InitializeComponent ();
+
         }
 
         private void ButtonTree_Click ( object sender, RoutedEventArgs e )

@@ -12,15 +12,22 @@ namespace FlowerShopIT.Models
         private string name;
         private List<Product> productsStock;
 
+
+        public FlowerShop (  )
+        {
+            
+        }
+
         public FlowerShop ( string _name )
         {
             this.name = _name;
             this.productsStock = new List<Product> ();
         }
 
-        public string NAME {
-            get { return this.name; }
-            set { this.name = checkFlowerShopName(value); } 
+        public string NAME
+        {
+            get => this.name;
+            set { this.name = checkFlowerShopName ( value ); }
         }
 
         private string checkFlowerShopName ( string name )

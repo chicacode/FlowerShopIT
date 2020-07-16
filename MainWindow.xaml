@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="FlowerShop" Height="650" Width="1000">
     <Grid>
-        <TextBlock Name="FlowerShopName" Grid.Row="0" Grid.ColumnSpan="3" Background="Salmon" Padding="20px" FontSize="34" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,25,0" Text="Flower Shop Lemon Tree"/>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Background="Salmon" Padding="20px" FontSize="34" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,25,0" Text="Welcome"/><!-- {Binding Path=LabelName, Mode=TwoWay} -->
 
         <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="28" Margin="30" Background="GreenYellow" BorderBrush="Beige" Click="ButtonTree_Click">Add Tree</Button>
         <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="28"  Margin="30" Background="Pink" BorderBrush="Beige" Click="ButtonFlower_Click">Add Flower</Button>
