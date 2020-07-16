@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Resources"
   ],
-  "SelectedNode": "\\MainWindow.xaml.cs",
+  "SelectedNode": "\\Resources\\image1.jpg",
   "PreviewInSolutionExplorer": false
 }
