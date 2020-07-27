@@ -19,7 +19,7 @@
                 </ComboBoxItem>
             </ComboBox>
             <TextBlock Margin="200,0,200,0" Text="Price:" FontSize="20"/>
-            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,15" FontSize="20" VerticalContentAlignment="Center" Name="DecorationPrice"/>
+            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,15" FontSize="20" VerticalContentAlignment="Center" Name="DecorationPrice" PreviewTextInput="NumberValidationTextBox"/>
             <Button Margin="300,30,300,0" Height="40" FontSize="24" Click="AddDecorationMethod">Add</Button>
         </StackPanel>
     </Grid>
