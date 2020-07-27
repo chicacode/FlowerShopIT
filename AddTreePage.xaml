@@ -10,9 +10,9 @@
         <StackPanel HorizontalAlignment="Left" Height="401" Margin="10,10,0,0" VerticalAlignment="Top" Width="773" Background="GreenYellow">
             <TextBlock Name="AddTree" FontSize="28" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,10,10,10" Text="Add a new tree product"/>
             <TextBlock Margin="200,40,200,0" Text="Height:" FontSize="20"/>
-            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Name="TreeHeight"/>
+            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Name="TreeHeight" PreviewTextInput="NumberValidationTextBox" />
             <TextBlock Margin="200,0,200,0" Text="Price:" FontSize="20"/>
-            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Name="TreePrice"/>
+            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Name="TreePrice" PreviewTextInput="NumberValidationTextBox" />
             <Button Margin="300,10,300,0" Height="40" FontSize="24" Click="AddTreeMethod">Add</Button>
         </StackPanel>
     </Grid>

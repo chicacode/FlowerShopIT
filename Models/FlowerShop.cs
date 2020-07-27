@@ -23,7 +23,6 @@ namespace FlowerShopIT.Models
         public string Name { 
             get { return this.name;  }
             set { this.name = checkName ( value );  }
-        
         }
 
         private string checkName ( string name )

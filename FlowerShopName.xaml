@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="FlowerShopName" Height="450" Width="800">
     <Grid>
+
         <StackPanel HorizontalAlignment="Left" Height="401" Margin="10,10,0,0" VerticalAlignment="Top" Width="773" Background="LightGray">
+
             <TextBlock Text="What is the name of your flower shop?" FontSize="24" FontFamily="Segoe UI Black" Margin="170,100,0,20"/>
             <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Text="{Binding Name, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"/>
             <Button Margin="300,30,300,0" Height="40" FontSize="24" Click="Button_Click">OK</Button>
