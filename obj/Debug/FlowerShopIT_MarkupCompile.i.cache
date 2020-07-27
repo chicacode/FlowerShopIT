@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\oriol_000\Documents\IT_Academy\FlowerShopIT\FlowerShopIT\obj\Debug\
+C:\Users\Moi\source\repos\FlowerShopIT\obj\Debug\
 FlowerShopIT
 none
 false
 DEBUG;TRACE
-C:\Users\oriol_000\Documents\IT_Academy\FlowerShopIT\FlowerShopIT\App.xaml
+C:\Users\Moi\source\repos\FlowerShopIT\App.xaml
 72021884882
 
 17126002675
 13-1505183044
 AddDecorationPage.xaml;AddFlowerPage.xaml;AddTreePage.xaml;FlowerShopHome.xaml;FlowerShopName.xaml;MainWindow.xaml;StockPage.xaml;
 
-False
+True
 

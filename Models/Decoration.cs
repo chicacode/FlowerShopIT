@@ -19,17 +19,5 @@ namespace FlowerShopIT.Models
             Material = _material;
         }
 
-        /*
-        public Material materialPlastic ( )
-        {
-            Material plastic = Material.PLASTIC;
-            return plastic;
-        }
-
-        public Material materialWood ( )
-        {
-            Material wood = Material.WOOD;
-            return wood;
-        } */
     }
 }
