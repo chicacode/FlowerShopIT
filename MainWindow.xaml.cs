@@ -19,51 +19,13 @@ namespace FlowerShopIT
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : NavigationWindow
     {
+        public FlowerShop NewFlowerShop { get; set; }
         public MainWindow()
         {
-           
-            FlowerShop flowerShop1 = new FlowerShop ();
-            if(flowerShop1.NAME == null)
-            {
-                FlowerShopName newFlowerShopName = new FlowerShopName ();
-                
-                newFlowerShopName.Show ();
-            // Cuando haga click en el botón de la ventana principal que aparezca la floristeria con las opciones
-                this.DataContext = newFlowerShopName.LabelName;
-                
-            }
-            InitializeComponent ();
-
+            InitializeComponent();
+            DataContext = FlowerShop.GetDetails();
         }
-
-        private void ButtonTree_Click ( object sender, RoutedEventArgs e )
-        {
-            // show new windows and save data
-            AddTreeWindow addTree = new AddTreeWindow ();
-            addTree.Show ();
-                     
-        }
-
-        private void ButtonFlower_Click ( object sender, RoutedEventArgs e )
-        {
-            AddFlowerWindow addFlower = new AddFlowerWindow ();
-            addFlower.Show ();
-        }
-
-        private void ButtonDeco_Click ( object sender, RoutedEventArgs e )
-        {
-            AddDecorationWindow addDeco = new AddDecorationWindow ();
-            addDeco.Show ();
-        }
-
-        private void ViewStock_Click ( object sender, RoutedEventArgs e )
-        {
-            StockWindow viewStock = new StockWindow ();
-            viewStock.Show ();
-        }
-
-
     }
 }

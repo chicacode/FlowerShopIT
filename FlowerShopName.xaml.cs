@@ -12,43 +12,26 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using FlowerShopIT.Models;
 
 namespace FlowerShopIT
 {
     /// <summary>
     /// Interaction logic for FlowerShopName.xaml
     /// </summary>
-    public partial class FlowerShopName : Window, INotifyPropertyChanged
+    public partial class FlowerShopName : Window
     {
-        private string name, labelName;
         public FlowerShopName()
         {
             InitializeComponent();
-        }
-        //public FlowerShopName ( string name )
-        //{
-        //    this.name = name;
-        //}
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged ( string property)
-        {
-            if(PropertyChanged != null)
-            {
-                PropertyChanged ( this, new PropertyChangedEventArgs ( property ) );
-            }
-         
-        }
-        public string NAME {
-            get => this.name;
-            set { name = value; OnPropertyChanged ( "LabelName" ); }
+            DataContext = FlowerShop.GetDetails();
         }
 
-        public string LabelName
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            get { labelName = NAME; return labelName; }
-            set { labelName = value;  }
-          
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
         }
     }
 }

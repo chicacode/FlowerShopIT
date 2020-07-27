@@ -11,17 +11,19 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using FlowerShopIT.Models;
 
 namespace FlowerShopIT
 {
     /// <summary>
     /// Interaction logic for StockWindow.xaml
     /// </summary>
-    public partial class StockWindow : Window
+    public partial class StockPage : Page
     {
-        public StockWindow()
+        public StockPage()
         {
             InitializeComponent();
+            DataContext = FlowerShop.GenerateProductStocks();
         }
     }
 }

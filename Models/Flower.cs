@@ -6,22 +6,15 @@ using System.Threading.Tasks;
 
 namespace FlowerShopIT.Models
 {
-   public class Flower : Product
+   public class Flower : IProduct
     {
-        // attribute
-        private string colorFlower;
+        public string Color { get; set; }
+        public float Price { get; set; }
 
-        // Constructor
-        public Flower ( double _price, string _color)
+        public Flower (float _price, string _color)
         {
-            this.PRICE = _price;
-            this.colorFlower = _color;
-        }
-
-        // Method
-        public string getColor ( )
-        {
-            return this.colorFlower;
+            Price = _price;
+            Color = _color;
         }
     }
 }

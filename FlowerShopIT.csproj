@@ -55,18 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="StockWindow.xaml.cs">
-      <DependentUpon>StockWindow.xaml</DependentUpon>
+    <Compile Include="FlowerShopHome.xaml.cs">
+      <DependentUpon>FlowerShopHome.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddDecorationWindow.xaml">
+    <Compile Include="StockPage.xaml.cs">
+      <DependentUpon>StockPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddDecorationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddFlowerWindow.xaml">
+    <Page Include="AddFlowerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddTreeWindow.xaml">
+    <Page Include="AddTreePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlowerShopHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -78,20 +85,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AddDecorationWindow.xaml.cs">
-      <DependentUpon>AddDecorationWindow.xaml</DependentUpon>
+    <Compile Include="AddDecorationPage.xaml.cs">
+      <DependentUpon>AddDecorationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddFlowerWindow.xaml.cs">
-      <DependentUpon>AddFlowerWindow.xaml</DependentUpon>
+    <Compile Include=".xaml.cs">
+      <DependentUpon>AddFlowerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddTreeWindow.xaml.cs">
-      <DependentUpon>AddTreeWindow.xaml</DependentUpon>
+    <Compile Include="AddTreePage.xaml.cs">
+      <DependentUpon>AddTreePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controllers\FlowerShopController.cs" />
     <Compile Include="FlowerShopName.xaml.cs">
       <DependentUpon>FlowerShopName.xaml</DependentUpon>
     </Compile>
@@ -99,7 +105,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="StockWindow.xaml">
+    <Page Include="StockPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,8 +114,7 @@
     <Compile Include="Models\Decoration.cs" />
     <Compile Include="Models\Flower.cs" />
     <Compile Include="Models\FlowerShop.cs" />
-    <Compile Include="SeedWork\Material.cs" />
-    <Compile Include="SeedWork\Product.cs" />
+    <Compile Include="Models\IProduct.cs" />
     <Compile Include="Models\Tree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -136,6 +141,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="image1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

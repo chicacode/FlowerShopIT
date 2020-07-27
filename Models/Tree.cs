@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace FlowerShopIT.Models
 {
-    class Tree : Product
+    public class Tree : IProduct
     {
-       private double height;
+        public float Height { get; set; }
+        public float Price { get; set; } 
 
-        public Tree ( double _price, double _height )
+        public Tree (float _price, float _height)
         {
-            PRICE = _price;
-            this.height = _height;
+            Price = _price;
+            Height = _height;
         }
-
-        public double getHeight ( )
-        {
-            return height;
-        }
-
     }
 }
