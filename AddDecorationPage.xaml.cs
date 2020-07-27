@@ -35,8 +35,13 @@ namespace FlowerShopIT
         }
         private void NumberValidationTextBox ( object sender, TextCompositionEventArgs e )
         {
-            Regex regex = new Regex ( "[^0-9]+" );
-            e.Handled = regex.IsMatch ( e.Text );
+            Regex regex = new Regex ( @"^[0-9]*(?:\.[0-9]*)?$" );
+            if(regex.IsMatch ( e.Text ) && !(e.Text == "." && ((TextBox)sender).Text.Contains ( e.Text )))
+                e.Handled = false;
+
+            else
+                e.Handled = true;
+           
         }
         private void AddDecorationMethod(object sender, RoutedEventArgs e)
         {

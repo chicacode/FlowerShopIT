@@ -74,10 +74,15 @@ namespace FlowerShopIT
         }
         private void NumberValidationTextBox ( object sender, TextCompositionEventArgs e )
         {
-            Regex regex = new Regex ( "[^0-9]+" );
-            e.Handled = regex.IsMatch ( e.Text );
+            Regex regex = new Regex ( @"^[0-9]*(?:\.[0-9]*)?$" );
+            if(regex.IsMatch ( e.Text ) && !(e.Text == "." && ((TextBox)sender).Text.Contains ( e.Text )))
+                e.Handled = false;
+
+            else
+                e.Handled = true;
+
         }
-            private void AddFlowerMethod(object sender, RoutedEventArgs e)
+        private void AddFlowerMethod(object sender, RoutedEventArgs e)
         {
             string color = checkColorName(FlowerColor.Text);
             float price = CheckString(FlowerPrice.Text);
