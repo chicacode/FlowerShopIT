@@ -6,28 +6,20 @@ using System.Threading.Tasks;
 
 namespace FlowerShopIT.Models
 {
-    class Decoration : Product
+    public class Decoration : IProduct
     {
         // USer attribute Material type
-        private Material material;
+        public string Material { get; set; }
+        public float Price { get; set; }
 
         // Constructor
-        public Decoration ( double _price, Material _material )
+        public Decoration (float _price, string _material)
         {
-            this.PRICE = _price;
-            this.material = _material;
+            Price = _price;
+            Material = _material;
         }
 
-        public Material getMaterial ( )
-        {
-            return this.material;
-        }
-
-        public void setMaterial ( Material _material )
-        {
-            this.material = _material;
-        }
-
+        /*
         public Material materialPlastic ( )
         {
             Material plastic = Material.PLASTIC;
@@ -38,6 +30,6 @@ namespace FlowerShopIT.Models
         {
             Material wood = Material.WOOD;
             return wood;
-        }
+        } */
     }
 }

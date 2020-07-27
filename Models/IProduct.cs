@@ -16,30 +16,8 @@ namespace FlowerShopIT.Models
 
         // ALT+F8  para indentar 
         // CTR+k, CTR+C para comentar
-    public class Product
+    public interface IProduct
     {
-        // attributes
-        private double price;
-
-        public Product ( ) { }
-        // Constructor
-        public Product ( double price )
-        {
-
-            this.price = price;
-        }
-
-        public double PRICE
-        {
-
-            get { return price; }
-            set { price = setPrice(value); }
-        }
-
-        private double setPrice ( double _price )
-        {
-
-            return price = _price;
-        }
+        float Price { get; set; }
     }
 }

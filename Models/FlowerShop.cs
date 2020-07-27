@@ -1,56 +1,81 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Navigation;
 
 namespace FlowerShopIT.Models
 {
-    class FlowerShop
+    public class FlowerShop
     {
-        private string name;
-        private List<Product> productsStock;
+        public string Name { get; set; }
+        public ObservableCollection<IProduct> Stock { get; set; }
+        public ObservableCollection<string> FlowerStock { get; set; }
+        public ObservableCollection<string> TreeStock { get; set; }
+        public ObservableCollection<string> DecorationStock { get; set; }
 
+        static FlowerShop _flowerShop;
 
-        public FlowerShop (  )
+        public static FlowerShop GetDetails()
         {
-            
+            if (_flowerShop == null)
+                _flowerShop = new FlowerShop();
+
+            return _flowerShop;
+        }
+        public static FlowerShop AddStock(IProduct product)
+        {
+            if (_flowerShop.Stock == null)
+                _flowerShop.Stock = new ObservableCollection<IProduct>();
+
+            _flowerShop.Stock.Add(product);
+            return _flowerShop;
         }
 
-        public FlowerShop ( string _name )
+        // https://stackoverflow.com/a/15341181
+        public static bool HasProperty(object obj, string propertyName)
         {
-            this.name = _name;
-            this.productsStock = new List<Product> ();
+            return obj.GetType().GetProperty(propertyName) != null;
         }
 
-        public string NAME
+        public static FlowerShop GenerateProductStocks()
         {
-            get => this.name;
-            set { this.name = checkFlowerShopName ( value ); }
-        }
+            if (_flowerShop.Stock == null)
+                _flowerShop.Stock = new ObservableCollection<IProduct>();
 
-        private string checkFlowerShopName ( string name )
-        {
-            while(string.IsNullOrEmpty(name) || name.Length < 2)
+            _flowerShop.FlowerStock = new ObservableCollection<string>();
+            _flowerShop.TreeStock = new ObservableCollection<string>();
+            _flowerShop.DecorationStock = new ObservableCollection<string>();
+
+            foreach (IProduct product in _flowerShop.Stock)
             {
-                Console.WriteLine ("Introducir un nombre de Floristeria válido");
-                return null;
+                if (product.GetType().GetProperty("Color") != null)
+                {                    
+                    _flowerShop.FlowerStock.Add($"Color: {((Flower)product).Color}, Price: {product.Price.ToString("C", CultureInfo.CurrentCulture)}");
+                }
+                else if (product.GetType().GetProperty("Height") != null)
+                {                    
+                    _flowerShop.TreeStock.Add($"Height: {((Tree)product).Height:n2}, Price: {product.Price.ToString("C", CultureInfo.CurrentCulture)}");
+                }
+                else
+                {
+                    _flowerShop.DecorationStock.Add($"Material: {((Decoration)product).Material}, Price: {product.Price.ToString("C", CultureInfo.CurrentCulture)}");
+                }
             }
 
-            return this.name = name;
-        }
+            if (!_flowerShop.FlowerStock.Any())
+                _flowerShop.FlowerStock.Add($"{_flowerShop.Name} has no flowers yet!");
+            if (!_flowerShop.TreeStock.Any())
+                _flowerShop.TreeStock.Add($"{_flowerShop.Name} has no trees yet!");
+            if (!_flowerShop.DecorationStock.Any())
+                _flowerShop.DecorationStock.Add($"{_flowerShop.Name} has no decorations yet!");
 
-        // Add flower, tree or decoration items into Product List in FlowerShop to get an Stock
-        public void addProduct ( Product item )
-        {
-            this.productsStock.Add ( item );
-        }
-
-        // Method to get all the products in stock
-        public List<Product> getStockFlowerShop ( )
-        {
-            return this.productsStock;
+            return _flowerShop;
         }
     }
 }

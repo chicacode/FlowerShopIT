@@ -1,32 +1,9 @@
-﻿<Window x:Class="FlowerShopIT.MainWindow"
+﻿<NavigationWindow x:Class="FlowerShopIT.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlowerShopIT"
         mc:Ignorable="d"
-        Title="FlowerShop" Height="650" Width="1000">
-    <Grid>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Background="Salmon" Padding="20px" FontSize="34" Foreground="Beige" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,25,0" Text="Welcome"/><!-- {Binding Path=LabelName, Mode=TwoWay} -->
-
-        <Button Grid.Column="0" Grid.Row="1" x:Name="buttonTree" FontSize="28" Margin="30" Background="GreenYellow" BorderBrush="Beige" Click="ButtonTree_Click">Add Tree</Button>
-        <Button Grid.Column="0" Grid.Row="2" x:Name="buttonFlower" FontSize="28"  Margin="30" Background="Pink" BorderBrush="Beige" Click="ButtonFlower_Click">Add Flower</Button>
-        <Button Grid.Column="0" Grid.Row="3" x:Name="buttonDeco" FontSize="28"  Margin="30" Background="Cyan"  BorderBrush="Beige" Click="ButtonDeco_Click">Add Decoration</Button>
-        <Button Grid.Column="1" Grid.RowSpan="4" FontSize="34" Content="Stock"  Background="Orange"  x:Name="image1"  BorderBrush="Beige" BorderThickness="0" Margin="0,107,30,30" Click="ViewStock_Click"/>
-        <Image Grid.Column="2" Grid.RowSpan="4" Name="image" Source="C:\Users\Moi\source\repos\FlowerShopIT\Resources/image1.jpg" IsEnabled="False" Margin="0,80,25,30"></Image>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition x:Name="Row1" Height="75"></RowDefinition>
-            <RowDefinition x:Name="Row2" Height="*"></RowDefinition>
-            <RowDefinition x:Name="Row3" Height="*" ></RowDefinition>
-            <RowDefinition x:Name="Row4" Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-
-    </Grid>
-</Window>
+        Title="FlowerShop" Height="450" Width="800" Source="FlowerShopHome.xaml">
+</NavigationWindow>
