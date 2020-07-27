@@ -13,33 +13,33 @@ namespace FlowerShopIT.Models
 {
     public class FlowerShop
     {
-        private string name;
-
-        public FlowerShop() { }
-        public FlowerShop ( string name )
-        {
-            this.name = name;
-        }
-        public string Name { 
-            get { return this.name;  }
-            set { this.name = checkName ( value );  }
-        }
-
-        private string checkName ( string name )
-        {
-            while(string.IsNullOrEmpty(name) || name.Length < 3)
-            {
-               throw new ArgumentException ( "Flower Shop cannot be empty" );
-            }
-            return name;
-        }
+      
         public ObservableCollection<IProduct> Stock { get; set; }
         public ObservableCollection<string> FlowerStock { get; set; }
         public ObservableCollection<string> TreeStock { get; set; }
         public ObservableCollection<string> DecorationStock { get; set; }
 
         static FlowerShop _flowerShop;
+        private string name;
+        public FlowerShop ( ) { }
+        public FlowerShop ( string name )
+        {
+            this.name = name;
+        }
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = checkName ( value ); }
+        }
 
+        private string checkName ( string name )
+        {
+            while(string.IsNullOrEmpty ( name ) || name.Length < 3)
+            {
+                throw new ArgumentException ( "Flower Shop cannot be empty" );
+            }
+            return name;
+        }
         public static FlowerShop GetDetails()
         {
             if (_flowerShop == null)

@@ -10,9 +10,9 @@
         <StackPanel HorizontalAlignment="Left" Height="401" Margin="10,10,0,0" VerticalAlignment="Top" Width="773" Background="Pink">
             <TextBlock Name="AddFlower" FontSize="28" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,10,10,10" Text="Add a new flower product"/>
             <TextBlock Margin="200,40,200,0" Text="Color:" FontSize="20"/>
-            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Name="FlowerColor"/>
+            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Name="FlowerColor" TextChanged="validateTextCharacter"  Text="{Binding FlowerColor, ValidatesOnExceptions=True }"/>
             <TextBlock Margin="200,0,200,0" Text="Price:" FontSize="20"/>
-            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Name="FlowerPrice"/>
+            <TextBox Height="40" TextWrapping="Wrap" Margin="200,0,200,40" FontSize="20" VerticalContentAlignment="Center" Name="FlowerPrice" PreviewTextInput="NumberValidationTextBox"/>
             <Button Margin="300,10,300,0" Height="40" FontSize="24" Click="AddFlowerMethod">Add</Button>
         </StackPanel> 
     </Grid>
